@@ -1,8 +1,10 @@
 # Make sure the training is reproducible
 from numpy.random import seed
-seed(2)
-from tensorflow import set_random_seed
-set_random_seed(3)
+seed(1)
+#from tensorflow import set_random_seed #this is no longer needed in new version of TF
+#set_random_seed(2) #this is no longer needed in new version of TF
+import tensorflow as tf
+tf.random.set_seed(1)
 
 import numpy as np
 from preprocessing_and_loading_data.DataLoader import DataLoader
