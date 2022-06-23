@@ -1,12 +1,6 @@
-# Project 2 : Twitter Sentiment Classification
+Twitter Sentiment Classification
 
-This project was created as part of the Machine Learning course [ **CS-433** ] at EPFL. We developed a tweet sentiment classification pipeline including preprocessing steps, sequential representation of tweets, and some state-of-the-art neural architectures for tweet classification. The best and final model was obtained with the LSTM architecture. 
-
-## crowdAI submission
-
-- Name: Martin Milenkoski
-- ID: 25120
-- Link: https://www.crowdai.org/challenges/48/submissions/25120
+We developed a tweet sentiment classification pipeline including preprocessing steps, sequential representation of tweets, and some state-of-the-art neural architectures for tweet classification. The best and final model was obtained with the LSTM architecture. 
 
 ## Getting Started
 
@@ -31,8 +25,6 @@ The pretrained GloVe embeddings and the Twitter datasets can be downloaded from 
 
 link 1: https://drive.google.com/open?id=1pqY5LHdB4R101G9MUaVygXeUYRgXX8k6
 
-mirror (in case of problems): https://drive.google.com/file/d/1S3BD_hBa16i9mozQ3y75j5OU0B15sDl6/view?usp=sharing
-
 Just extract the zip file into the `data` folder. The data is the same as provided on the GloVe website and crowdAI competition, but named and organized as used in our code. Please make sure that the data folder contains two subdirectories 'twitter-dataset' and 'glove_embeddings' instead of a another single 'data' subdirectory in order for the code to work. The twitter dataset should be in the directory 'data/twitter-dataset' and the glove embeddings should be in 'data/glove_embeddings'.
 
 ### Model weights
@@ -50,7 +42,7 @@ Exrtact the zip file into the `models_checkpoints` folder.
 This project does not require any installation. To use, simply clone the repository to your local machine using the following command:
 
 ```
-git clone https://github.com/blagojce95/ml_project2.git
+git clone https://github.com/BoschSamuel/Twitter-Sentiment-Analysis
 ```
 
 ## Project Structure
@@ -98,8 +90,3 @@ python train_CNN.py
 
 The model parameters can be changed by editing the params dictionary in the `train_CNN.py` file, and the model architecture can be changed by editing the build_model() method in the `models/CNN_model.py` file.
 
-## Authors
-
-* Blagoj Mitrevski      blagoj.mitrevski@epfl.ch
-* Martin Milenkoski     martin.milenkoski@epfl.ch
-* Samuel Bosch          samuel.bosch@epfl.ch
