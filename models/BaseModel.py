@@ -91,8 +91,10 @@ class BaseModel():
         # For reproducibility
         from numpy.random import seed
         seed(1)
-        from tensorflow import set_random_seed
-        set_random_seed(2)
+        #from tensorflow import set_random_seed
+        #set_random_seed(2)
+        import tensorflow
+        tensorflow.random.set_seed(2)
         # Create checkpoint callback object
         checkpointer = ModelCheckpoint(filepath=self.checkpoint_path, save_best_only=False, save_weights_only=True)
         # Create tensorboard callback object
