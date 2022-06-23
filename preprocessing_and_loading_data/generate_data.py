@@ -1,7 +1,8 @@
 import os
 import numpy as np
 import sys
-from keras.preprocessing.sequence import pad_sequences
+#from keras.preprocessing.sequence import pad_sequences
+from keras_preprocessing.sequence import pad_sequences
 import re
 import json
 
