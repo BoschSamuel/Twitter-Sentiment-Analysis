@@ -1,7 +1,8 @@
 import keras
 from keras.models import Sequential, model_from_json
 from keras.layers import *
-from keras.layers.embeddings import Embedding
+# from keras.layers.embeddings import Embedding #replaced with next line
+from keras.layers import Embedding
 from keras.callbacks import ModelCheckpoint, TensorBoard
 import numpy as np
 import pandas as pd
