@@ -17,7 +17,7 @@ The project was created and tested with the following dependencies:
 - h5py=2.8.0
 - scikit-learn=0.20.1
 - keras-gpu=2.0.8
-- tensorflow-gpu=1.4.1
+- tensorflow-gpu=1.4.1 (this has been updated in the meantime)
 ```
 
 ### Datasets
